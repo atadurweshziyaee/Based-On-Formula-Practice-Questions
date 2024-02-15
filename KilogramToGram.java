@@ -9,7 +9,7 @@ public class KilogramToGram {
         double kg = sc.nextDouble();
 
         //calling mToMm() method.
-        double result = kgToG(kg);
+        long result = kgToG(kg);
         System.out.println("========================================================");
         System.out.println("\n\n Kilogram \t\t\t: "+kg+"kg\n           \t to");
         System.out.println("Gram           \t\t: "+result+"g");
@@ -17,8 +17,8 @@ public class KilogramToGram {
     }
 
     // it will convert meter to millimeter.
-    public static double kgToG(double kg){
-        double gram = kg * 1000.0d;
+    public static long kgToG(double kg){
+        long gram = (long)kg * 1000;
         return gram;
     }
 }
